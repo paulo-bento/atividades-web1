@@ -1,1 +1,1 @@
-# Django avançado 2
+Django avançado 2
