@@ -1,0 +1,71 @@
+Watching for file changes with StatReloader
+View dispatch executada em 0.02s
+"GET / HTTP/1.1" 302 0
+"GET /login/?next=/ HTTP/1.1" 200 1436
+"POST /login/?next=/ HTTP/1.1" 302 0
+View dispatch executada em 0.01s
+"GET / HTTP/1.1" 200 1669
+"GET /documentos/novo/ HTTP/1.1" 200 1875
+/home/paulobento/Documentos/ADS P3/Web 1/django-avancado-2/app/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/paulobento/Documentos/ADS P3/Web 1/django-avancado-2/app/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/paulobento/Documentos/ADS P3/Web 1/django-avancado-2/app/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/paulobento/Documentos/ADS P3/Web 1/django-avancado-2/app/admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+View dispatch executada em 0.01s
+"GET / HTTP/1.1" 200 1669
+"GET /documentos/novo/ HTTP/1.1" 200 1875
+View dispatch executada em 0.01s
+"GET / HTTP/1.1" 200 1669
+"GET /admin/ HTTP/1.1" 200 7799
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+"GET /static/admin/css/base.css HTTP/1.1" 200 22120
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /admin/app/documento/ HTTP/1.1" 200 10199
+"GET /static/admin/js/core.js HTTP/1.1" 200 6208
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+"GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /admin/ HTTP/1.1" 200 7799
+"GET /admin/app/documento/ HTTP/1.1" 200 10199
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/ HTTP/1.1" 200 9081
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /documentos/novo/ HTTP/1.1" 200 1875
+"GET /admin/app/categoria/ HTTP/1.1" 200 8752
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /admin/app/categoria/add/ HTTP/1.1" 200 16479
+"GET /static/admin/js/inlines.js HTTP/1.1" 200 15628
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11991
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 537

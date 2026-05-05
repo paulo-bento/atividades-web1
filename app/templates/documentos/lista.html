@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Meus Documentos</h2>
+<a href="{% url 'novo_documento' %}" class="btn btn-primary mb-3">Novo Documento</a>
+
+<table class="table table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>Nome</th>
+            <th>Categoria</th>
+            <th>Data de Envio</th>
+            <th>Verificado</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for doc in documentos %}
+        <tr>
+            <td>{{ doc.arquivo.name|cut:"uploads/" }}</td>
+            <td>{{ doc.categoria }}</td>
+            <td>{{ doc.data_envio|date:"d/m/Y H:i" }}</td>
+            <td>{{ doc.verificado|yesno:"Sim,Não" }}</td>
+            <td>
+                {% if doc.arquivo %}
+                    <a href="{{ doc.arquivo.url }}" target="_blank" class="btn btn-sm btn-outline-info">Visualizar</a>
+                {% endif %}
+            </td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="5" class="text-center">Nenhum documento enviado.</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
