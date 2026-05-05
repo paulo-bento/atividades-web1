@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <title>Clientes Ativos</title>
+</head>
+
+<body>
+  <h1>Lista de Clientes</h1>
+
+  <ul>
+    {% for client in clients %}
+    <li>
+      <strong>{{ client.name }}</strong><br>
+      Email: {{ client.email }}<br>
+      Pedidos: {{ client.total_orders }}<br>
+      Total gasto: R$ {{ client.total_spent|default:"0.00" }}
+    </li>
+    <br>
+    {% empty %}
+    <li>Nenhum cliente encontrado.</li>
+    {% endfor %}
+  </ul>
+</body>
+
+</html>
