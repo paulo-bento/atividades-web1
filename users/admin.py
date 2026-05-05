@@ -1,0 +1,9 @@
+from django.contrib import admin
+
+from .models import CustomUser
+
+
+@admin.register(CustomUser)
+class CustomUserAdmin(admin.ModelAdmin):
+    list_display = ('email', 'nome_completo', 'is_staff', 'is_active')
+    search_fields = ('email', 'nome_completo')

@@ -1,0 +1,6 @@
+<h2>Confirmação de Pedido</h2>
+<p>Olá {{ usuario.nome_completo|default:usuario.email }},</p>
+<p>
+  Seu pedido <strong>{{ pedido.titulo }}</strong> foi registrado com sucesso.
+</p>
+<p>Status atual: <strong>{{ pedido.get_status_display }}</strong></p>

@@ -1,0 +1,38 @@
+{% extends "base.html" %} {% block content %}
+<h2>Meus Pedidos</h2>
+<a href="{% url 'novo_pedido' %}" class="btn btn-primary mb-3">Novo Pedido</a>
+
+<table class="table table-bordered">
+  <thead class="table-dark">
+    <tr>
+      <th>Título</th>
+      <th>Status</th>
+      <th>Data</th>
+      <th>Arquivo</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for pedido in pedidos %}
+    <tr>
+      <td>{{ pedido.titulo }}</td>
+      <td>{{ pedido.get_status_display }}</td>
+      <td>{{ pedido.criado_em|date:"d/m/Y H:i" }}</td>
+      <td>
+        {% if pedido.arquivo %}
+        <a
+          href="{{ pedido.arquivo.url }}"
+          target="_blank"
+          class="btn btn-sm btn-outline-info"
+          >Ver</a
+        >
+        {% endif %}
+      </td>
+    </tr>
+    {% empty %}
+    <tr>
+      <td colspan="4" class="text-center">Nenhum pedido encontrado.</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
